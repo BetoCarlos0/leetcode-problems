@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/Problemas/Easy/first-unique/first-unique.csproj",
+                "${workspaceFolder}/Roman-Integer.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/Problemas/Easy/first-unique/first-unique.csproj",
+                "${workspaceFolder}/Roman-Integer.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/Problemas/Easy/first-unique/first-unique.csproj"
+                "${workspaceFolder}/Roman-Integer.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
