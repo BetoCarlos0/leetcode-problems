@@ -9,20 +9,55 @@ class Program{
     static void Main(string[] args){
         var result = new Solution();
         
-        string s = "()";
+        string s = "()[]{}";
         Console.WriteLine(result.IsValid(s));
     }
 }
 public class Solution {
     public bool IsValid(string s) {
-        string []count = new string[s.Length];
+        List<char> seq = new List<char>();
+
+        // for (int i = 0; i < s.Length; i++)
+        // {
+        //     if (s[i] == '('){
+        //         seq.Add(')');
+        //     }
+        //     if (s[i] == '['){
+        //         seq.Add(']');
+        //     }
+        //     if (s[i] == '{'){
+        //         seq.Add('}');
+        //     }
+        // }
+
+        if (s.Length != seq.Count*2)
+        {
+            return false;
+        }
+
         for (int i = 0; i < s.Length; i++)
         {
-            if (s[i] == '(')
+            if (s[i] == '('){
+                seq.Add(')');
+            }
+            if (s[i] == '['){
+                seq.Add(']');
+            }
+            if (s[i] == '{'){
+                seq.Add('}');
+            }
+
+            Console.WriteLine("s:{0} - seq:{1}",s[i], seq.Last());
+            if (s[i] == seq.Last())
             {
-                
+                Console.WriteLine(s[i]);
+                seq.Remove(seq.Last());
             }
         }
-        return false;
+        Console.WriteLine(seq.Count);
+        if (seq.Count != 0)
+            return false;
+            
+        return true;
     }
 }
