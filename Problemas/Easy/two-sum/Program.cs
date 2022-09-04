@@ -1,6 +1,8 @@
-﻿// Dada uma matriz de inteiros nums e um inteiro target, retorne os índices dos dois números de forma que a soma seja igual atarget .
-
-//Você pode assumir que cada entrada teria exatamente uma solução e não pode usar o mesmo elemento duas vezes.
+﻿/*
+1. Two Sum
+Dada uma matriz de inteiros nums e um inteiro target, retorne os índices dos dois números de forma que a soma seja igual atarget .
+Você pode assumir que cada entrada teria exatamente uma solução e não pode usar o mesmo elemento duas vezes.
+*/
 
 class Program{
     static void Main(string[] args){
